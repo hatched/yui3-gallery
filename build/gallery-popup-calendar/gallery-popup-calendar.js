@@ -133,7 +133,7 @@ Y.PopupCalendar = Y.Base.create('popup-calendar', Y.Calendar, [Y.WidgetPosition,
     showCalendar: function() {
 
         if (this.get('rendered')) {
-            this.show() 
+            this.show();
         } else {
             this.render();
             this._setPopupTabindex();
@@ -237,7 +237,7 @@ Y.PopupCalendar = Y.Base.create('popup-calendar', Y.Calendar, [Y.WidgetPosition,
                 return {
                     node: this.get('input'),
                     points: [Y.WidgetPositionAlign.TL, Y.WidgetPositionAlign.TR]
-                }
+                };
             }
         }
     }

@@ -141,7 +141,7 @@ Y.PopupCalendar = Y.Base.create('popup-calendar', Y.Calendar, [Y.WidgetPosition,
         Y.log('showCalendar', 'info', this.name);
 
         if (this.get('rendered')) {
-            this.show() 
+            this.show();
         } else {
             this.render();
             this._setPopupTabindex();
@@ -173,8 +173,6 @@ Y.PopupCalendar = Y.Base.create('popup-calendar', Y.Calendar, [Y.WidgetPosition,
      */
     setCalendarPosition: function() {
         Y.log('setCalendarPosition', 'info', this.name);
-        Y.log(this.get('align'));
-        Y.log('here');
         if (this.get('align') === null) {
             this.set('align', this.get('_align'));            
         }
@@ -249,7 +247,7 @@ Y.PopupCalendar = Y.Base.create('popup-calendar', Y.Calendar, [Y.WidgetPosition,
                 return {
                     node: this.get('input'),
                     points: [Y.WidgetPositionAlign.TL, Y.WidgetPositionAlign.TR]
-                }
+                };
             }
         }
     }
