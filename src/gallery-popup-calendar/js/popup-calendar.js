@@ -144,6 +144,7 @@ Y.PopupCalendar = Y.Base.create('popup-calendar', Y.Calendar, [Y.WidgetPosition,
             this.render();
             this._setPopupTabindex();
             this.setCalendarPosition();
+            this.get('contentBox').setStyle('height', this.get('height'));
         }
 
         if (this.get('autoFocusOnFieldFocus')) { this.focus(); }
