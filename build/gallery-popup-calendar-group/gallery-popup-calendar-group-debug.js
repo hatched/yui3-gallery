@@ -187,4 +187,5 @@ YUI.add('gallery-popup-calendar-group', function(Y) {
     });
 
 
-}, '@VERSION@' ,{skinnable:false, requires:['gallery-popup-calendar', 'calendar']});
+
+}, 'gallery-2012.05.09-20-27' ,{requires:['gallery-popup-calendar', 'calendar'], skinnable:false});
